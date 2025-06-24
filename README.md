@@ -41,17 +41,17 @@ Bivariate Analysis: Examines the relationship between two variables through visu
 Multivariate Analysis: Involves analyzing and visualizing interactions among three or more variables using heatmaps, pair plots, or facet grids to uncover deeper patterns and variable dependencies.
 
 # 6. DAX used:
-calender = CALENDAR("2019-01-01","2020-01-01") 
-Month = FORMAT(calender[Date].[Date] , "MMMM")
-month_no = MONTH(calender[Date].[Date]) 
-year = YEAR(calender[Date])
-Income_movement = SUM(ecom[Order Price])-[Prior_month_revenue]
-month_avg_revenue= CALCULATE(AVERAGEX(VALUES(calender[Month]),CALCULATE(SUM(ecom[Order Price]))) , calender[year] = 2019)
-MTD = TOTALMTD(SUM(ecom[Order Price]) ,calender[Date].[Date])
-QTD = TOTALQTD(SUM(ecom[Order Price]) ,calender[Date].[Date])
-Order Price = ecom[Quantity Ordered] * ecom[Price Each] 
-Prior_month_revenue = CALCULATE(SUM(ecom[Order Price]) , DATEADD(calender[Date].[Date],-1, MONTH))
-Quarter = "Q" & QUARTER(ecom[Date(New)]) 
+1. calender = CALENDAR("2019-01-01","2020-01-01") 
+2. Month = FORMAT(calender[Date].[Date] , "MMMM")
+3. month_no = MONTH(calender[Date].[Date]) 
+4. year = YEAR(calender[Date])
+5. Income_movement = SUM(ecom[Order Price])-[Prior_month_revenue]
+6. month_avg_revenue= CALCULATE(AVERAGEX(VALUES(calender[Month]),CALCULATE(SUM(ecom[Order Price]))) , calender[year] = 2019)
+7. MTD = TOTALMTD(SUM(ecom[Order Price]) ,calender[Date].[Date])
+8. QTD = TOTALQTD(SUM(ecom[Order Price]) ,calender[Date].[Date])
+9. Order Price = ecom[Quantity Ordered] * ecom[Price Each] 
+10. Prior_month_revenue = CALCULATE(SUM(ecom[Order Price]) , DATEADD(calender[Date].[Date],-1, MONTH))
+11. Quarter = "Q" & QUARTER(ecom[Date(New)]) 
 
 
 # 7. KPI-
