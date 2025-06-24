@@ -56,7 +56,16 @@ Multivariate Analysis: Involves analyzing and visualizing interactions among thr
 11. Quarter = "Q" & QUARTER(ecom[Date(New)]) 
 
 # Dashboard:-
+## Distribution:-
 <img width="650" alt="ecom_distribution" src="https://github.com/user-attachments/assets/005e43a5-7257-4394-983b-f08782e662ee" />
+
+## Revenue:-
+<img width="650" alt="ecom_revenue" src="https://github.com/user-attachments/assets/ba5033de-e512-42b3-8728-108b23fecf0d" />
+
+# count:-
+<img width="652" alt="ecom_count" src="https://github.com/user-attachments/assets/3a938977-6326-4cec-b898-77fd6272a70a" />
+
+
 
 
 # 7. KPI-
