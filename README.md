@@ -3,12 +3,9 @@
 # 1. Project Overview: 
 In today’s data-driven digital economy, analyzing e-commerce sales data has become crucial for businesses to optimize operations, identify sales trends, and increase profitability. This project focuses on extracting actionable insights from e-commerce transactions using a combination of Exploratory Data Analysis (EDA) in Python and interactive visualizations in Power BI. Unlike dashboard-only approaches, this project highlights the essential role of EDA in cleaning, understanding, and shaping the data before visualization. Using the CRISP-DM framework, the analysis explored key sales trends, regional performance, and product demand, based on features like Order Date, Product, Quantity Ordered, Price Each, and Address. The insights derived from EDA guided the design of a business-focused Power BI dashboard.
 
-![image](https://github.com/user-attachments/assets/f17f9139-adeb-44f6-a52f-a823ed3c083f)
-
 # 2. Project Objective:
 The objective of this project is to extract accurate, business-relevant insights from e-commerce sales data by following the CRISP-DM framework, with a strong emphasis on Exploratory Data Analysis (EDA) as the foundation for precision-driven reporting. The project begins with consolidating and standardizing 12 months of sales data from separate CSV files into a unified, clean dataset using Python. Through detailed EDA, patterns in product performance, regional demand, and monthly sales trends were uncovered. These insights were then used to design a dynamic Power BI dashboard that enables stakeholders to make informed, data-driven decisions based on thoroughly validated and structured data.
 
-![image](https://github.com/user-attachments/assets/7ac7878f-05df-4485-8f91-15c30c20e24e)
 # 3. Dataset Description:
 The dataset contains e-commerce sales transactions with the following columns:
 Order ID: Unique identifier for each purchase transaction.
@@ -18,8 +15,6 @@ Quantity Ordered: Number of units ordered for a product in a transaction.
 Price Each: Price of a single unit of the product.
 Address: Full shipping address, which includes street, city, state, and ZIP code .
 
-![image](https://github.com/user-attachments/assets/caba260a-5387-4228-bcde-45ca35ce6bc4)
-
 # 4. Tools Used:
 Python:   was used for data preprocessing and exploratory data analysis (EDA). It helped in loading and merging 12-month CSV files, cleaning
 and standardizing the data, creating new columns (e.g., Sales, Month, City), and uncovering trends and patterns using libraries like Pandas,
@@ -27,8 +22,6 @@ Matplotlib, and Seaborn.
 
 Power BI:  was used to build an interactive dashboard based on the insights gathered from EDA. The cleaned and prepared dataset was loaded
 into Power BI to create visuals such as bar charts, line graphs, and slicers, allowing users to explore sales performance by time, product, and region.
-
-![image](https://github.com/user-attachments/assets/f27192a2-6e3a-4dbc-90c9-6d0994ce3102)
 
 
 # 5. Exploratory Data Analysis (EDA)
@@ -47,8 +40,6 @@ Univariate Analysis: Focuses on visualizing individual variables to understand t
 Bivariate Analysis: Examines the relationship between two variables through visual tools such as scatter plots or line plots, helping identify trends, correlations, or group differences.
 Multivariate Analysis: Involves analyzing and visualizing interactions among three or more variables using heatmaps, pair plots, or facet grids to uncover deeper patterns and variable dependencies.
 
-![image](https://github.com/user-attachments/assets/da18aaa5-5e92-4b3f-a7ef-794a03e4e3dc)
-
 # 6. DAX used:
 calender = CALENDAR("2019-01-01","2020-01-01") 
 Month = FORMAT(calender[Date].[Date] , "MMMM")
@@ -62,7 +53,6 @@ Order Price = ecom[Quantity Ordered] * ecom[Price Each]
 Prior_month_revenue = CALCULATE(SUM(ecom[Order Price]) , DATEADD(calender[Date].[Date],-1, MONTH))
 Quarter = "Q" & QUARTER(ecom[Date(New)]) 
 
-![image](https://github.com/user-attachments/assets/f041a617-bb0a-42f6-afe1-c0965f596959)
 
 # 7. KPI-
 1. What is the Product Price Range?
