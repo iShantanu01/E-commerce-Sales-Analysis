@@ -6,7 +6,7 @@ In today’s data-driven digital economy, analyzing e-commerce sales data has be
 # 2. Project Objective:
 The objective of this project is to extract accurate, business-relevant insights from e-commerce sales data by following the CRISP-DM framework, with a strong emphasis on Exploratory Data Analysis (EDA) as the foundation for precision-driven reporting. The project begins with consolidating and standardizing 12 months of sales data from separate CSV files into a unified, clean dataset using Python. Through detailed EDA, patterns in product performance, regional demand, and monthly sales trends were uncovered. These insights were then used to design a dynamic Power BI dashboard that enables stakeholders to make informed, data-driven decisions based on thoroughly validated and structured data.
 
-
+https://github.com/iShantanu01/E-commerce-Sales-Analysis/blob/main/Ecom_objectuve.png
 
 # 3. Dataset Description:
 The dataset contains e-commerce sales transactions with the following columns:
