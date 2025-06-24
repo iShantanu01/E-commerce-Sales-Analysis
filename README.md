@@ -55,6 +55,9 @@ Multivariate Analysis: Involves analyzing and visualizing interactions among thr
 10. Prior_month_revenue = CALCULATE(SUM(ecom[Order Price]) , DATEADD(calender[Date].[Date],-1, MONTH))
 11. Quarter = "Q" & QUARTER(ecom[Date(New)]) 
 
+# Dashboard:-
+<img width="650" alt="ecom_distribution" src="https://github.com/user-attachments/assets/005e43a5-7257-4394-983b-f08782e662ee" />
+
 
 # 7. KPI-
 1. What is the Product Price Range?
